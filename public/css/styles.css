@@ -1,32 +1,86 @@
-body {
+* {
     margin:0;
     padding: 0;  
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
     font-size: 12px;
+    background-color: #ebebeb;
+}
+
+main{
+    width: 90%;
+}
+
+main section{
+    display: inline-block;
+}
+
+article{
+    background-color: white;
 }
 
 header{
     background-color:#EAC926;
-}
-header div{
-    display: flex;
     padding: 10px;
-}
-header img{
-    height: 50px;
-}
-nav{
-    display: inline;
+    
 }
 
-.precios{
+header div{
+    align-items: center;
+    display: flex;
+}
+
+header form input{
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    width: 400px;
+}
+
+header form button{
+    padding: 10px 15px;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 5px 5px 0;
+}
+
+header div img{
+    height: 40px;
+}
+
+header div h1,
+header div form{
+    margin-left: 50px;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+nav li{
+    display: inline-block;
+}
+
+
+
+article div{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.precios {
     font-size: 18px;
 }
 
-.descuentos{
-    font-size: 16px;
-}
-
+.descuentos,
 .descripciones{
     font-size: 16px;
 }
@@ -37,23 +91,45 @@ h2{
 
 .burger-menu{
     display: inline-block;
-    background-color: blue;
+    background-color: #1259c3;
     padding: 5px;
     color: white;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 footer{
     text-align: center;
 }
-
-section{
-    margin-bottom: 10px;
-    display: inline-block;
-    margin: 10px;
+section article{
+    margin:10px;
 }
-
 section i{
     font-size: 2em;
 }
+
+img{
+    width: 200px;
+}
+
+header nav{ 
+    display:flex; 
+    justify-content:space-between;
+  }
+  
+  ul { 
+    list-style-type: none;
+    display:flex; 
+   }
+  
+  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  
+  footer i{
+    color: #1259c3;
+  }
