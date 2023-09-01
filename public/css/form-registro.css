@@ -1,0 +1,73 @@
+.form-register {
+    width: 90%;
+    background: #73777a;
+    padding: 30px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: block;
+    padding-bottom: 16px;
+    font-size: 15px;
+}
+
+.categorias {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.categorias input {
+    margin-right: 5px;
+}
+
+#archivo{
+    margin-bottom: 16px;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.radio-option {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.radio-option input{
+    margin-right: 5px;
+}
+
+
+.botons {
+    display: flex;
+    justify-content: center;
+}
+
+.botons button {
+    background: #EAC926;
+    border: none;
+    width: 100px;
+    padding: 10px 0;
+    color: #000;
+    margin: 0 15px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+@media (min-width :481px) {
+    .form-register {
+        max-width: 400px;
+    }
+}
