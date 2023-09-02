@@ -63,7 +63,13 @@
     color: #000;
     margin: 0 15px;
     border-radius: 3px;
-    font-weight: 700;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.botons button:hover {
+  background-color: #0022AA;
+  color: white;
 }
 
 @media (min-width :481px) {

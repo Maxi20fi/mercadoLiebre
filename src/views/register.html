@@ -51,16 +51,16 @@
     </div>
   </header>
   <main>
-    <form class="form-register">
+    <form class="form-register" method="post">
       <h4>Formulario Registro</h4>
-      <input class="controls" type="text" name="nombre" placeholder="Nombre y apellido">
-      <input class="controls" type="text" name="username" placeholder="Nombre de usuario">
-      <input class="controls" type="email" name="email" placeholder="E-mail">
+      <input class="controls" type="text" name="nombre" placeholder="Nombre y apellido" required>
+      <input class="controls" type="text" name="username" placeholder="Nombre de usuario" required>
+      <input class="controls" type="email" name="email" placeholder="E-mail" required>
       <label class="info" for="birth-date">Fecha de nacimiento</label>
-      <input class="controls" type="date" name="birth-date" id="birth-date">
-      <input class="controls" type="text" name="domicilio" placeholder="Domicilio">
+      <input class="controls" type="date" name="birth-date" id="birth-date" required>
+      <input class="controls" type="text" name="domicilio" placeholder="Domicilio" required>
       <label class="info">Perfil del usuario</label>
-      <label for="client" class="radio-option"><input type="radio" name="perfil" id="client" value="client">Comprar</label>
+      <label for="client" class="radio-option"><input type="radio" name="perfil" id="client" value="client" required>Comprar</label>
       <label for="seller" class="radio-option"><input type="radio" name="perfil" id="seller" value="seller">Vender</label>
       <label class="info">Categorías de interés</label>
       <label class="categorias" for="electro"><input  input type="checkbox" name="cat-interes" id="electro" value="electro">Electro</label>
@@ -70,8 +70,8 @@
       <label class="categorias" for="vida-sana"><input  type="checkbox" name="cat-interes" id="vida-sana" value="vida-sana">Vida sana</label>
       <label class="info" for="">Subi tu foto de perfil</label>
       <input type="file" name="foto" id="archivo" accept=".jpg , .png">
-      <input class="controls" type="password" name="password" placeholder="Contraseña">
-      <input class="controls" type="password" name="confirm-password" placeholder="Confirmar contraseña">
+      <input class="controls" type="password" name="password" placeholder="Contraseña" required>
+      <input class="controls" type="password" name="confirm-password" placeholder="Confirmar contraseña" required>
       <div class="botons">
       <button type="reset" >Borrar</button>
       <button type="submit">Registrarme</button>

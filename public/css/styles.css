@@ -86,7 +86,7 @@ li a {
 }
 
 
-article div {
+article .producto {
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
@@ -109,6 +109,10 @@ article div {
     font-size: 16px;
     color: #39b54a;
     margin-left: 3px;
+}
+
+#banner{
+    width: 100%;
 }
 
 h2 {
@@ -159,10 +163,6 @@ article img {
     width: 200px;
 }
 
-footer i {
-    color: #1259c3;
-}
-
 .product-desc-box>.product-delivery-icon {
     display: block;
     font-size: 16px;
@@ -175,18 +175,28 @@ footer i {
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: transform 1000ms;
 }
 
 .product-desc-box {
     position: relative;
+    color: #39b54a;
+    
 }
 
-.carrito{
-    background-color: white;
-    border-top: 1px solid #ebebeb;
-    border-left: 15px;
-    border-right: 15px;
+.carrito:hover{
+    transform: rotateZ(-90deg);
 }
+
+footer i {
+    color: #1259c3;
+    transition: color 0.5s;
+}
+
+footer i:hover{
+    color: #39b54a;
+}
+
 
 
 @media (min-width :481px) {
